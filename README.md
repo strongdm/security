@@ -4,5 +4,6 @@ We've set this repository up to start providing useful information and links to 
 
 ## Responsible Disclosure Vulnerability Reporting
 We've created a few resources for people to use when reporting a potential security vulnerability to us:
+- [strongDM's Responsible Disclosure Policy][./responsibleDisclosurePolicy.md]
 - [How to report a vulnerability](./vulnerabilityReporting.md)
 - [Vulnerability Report Template](./vulnerabilityTemplate.md)
