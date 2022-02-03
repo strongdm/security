@@ -3,7 +3,5 @@
 We've set this repository up to start providing useful information and links to the public.
 
 ## Responsible Disclosure Vulnerability Reporting
-We've created a few resources for people to use when reporting a potential security vulnerability to us:
-- [strongDM's Responsible Disclosure Policy](./responsibleDisclosurePolicy.md)
-- [How to report a vulnerability](./vulnerabilityReporting.md)
-- [Vulnerability Report Template](./vulnerabilityTemplate.md)
+### IMPORTANT UPDATE
+Please note that our Responsible Disclosure Program has now moved to HackerOne. You will find our program [here](https://hackerone.com/strongdm). We are mirroring our new [Responsible Disclosure Program's policy](./responsibleDisclosurePolicy.md) in this repository for public view.

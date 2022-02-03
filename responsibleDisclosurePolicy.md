@@ -1,104 +1,140 @@
-# Responsible Disclosure Policy
-## Requirements to Follow
-1. strongDM requires that those submitting vulnerabilities through this Responsible Disclosure Policy:
+# IMPORTANT UPDATE
+Please note that our Responsible Disclosure Program has now moved to HackerOne. You will find our program [here](https://hackerone.com/strongdm). We are mirroring our new Responsible Disclosure Program's policy in this repository for public view. 
 
-    - Research only that which is "in-scope" or "allowed", as defined below;
-    - Communicate to us only by the methods described in the “How to Send Us a Report” section below;
-    - Keep any information about vulnerabilities you’ve discovered confidential between yourself and strongDM for at least 90 days;
-    - Ensure any data exposed is kept to a minimum, not stored, and treated as confidential at all times;
+# Background
+Responsible Disclosure Policies and Vulnerability Disclosure Programs encourage security researchers, customers, and other members of the public to safely and securely report potential vulnerabilities to strongDM without fear of prosecution or legal action, and allows strongDM a chance to be informed of potential vulnerabilities prior to them being publicly announced.
 
-## Requests for Compensation
-1. This Responsible Disclosure Program is _not_ a bug bounty program, and strongDM does not provide monetary compensation for reported vulnerabilities.
+These programs also signal to current and potential customers that a company is practicing a mature vulnerability management program, and is interested in advancing the security of their product.
 
-1. Vulnerability Reporters who request monetary compensation, either before or after submission, will be considered non-compliant with the requirements of this policy, and will not be afforded the protections defined in [strongDM's Commitments](#strongdms-commitments).
+strongDM looks forward to working with the security community to find security vulnerabilities in order to keep our businesses and customers safe.
 
-## strongDM's Commitments
-1. As long as a vulnerability reporter follows the requirements defined in this policy, strongDM makes the following commitments:
+# Table of Contents
+- [Safe Harbor][safe-harbor]
+- [Response & Remediation Targets][response--remediation-targets]
+- [Program Rules][program-rules]
+  - [Prohibited Methods][prohibited-methods]
+  - [What Should Not be Submitted][what-should-not-be-submitted]
+- [Out-of-Scope vulnerabilities][out-of-scope-vulnerabilities]
 
-    - We will not pursue civil or criminal legal action against a vulnerability reporter in response to vulnerability research and disclosure to us;
-    - We will work with the vulnerability reporter to understand and reproduce the vulnerability that has disclosed to us;
-    - We will keep the vulnerability reporter informed of our timeline for fixing the submitted vulnerability once we have verified it;
-    - We will recognize the vulnerability reporter on our website for their contributions toward making our product more secure;
-    - We may allow the vulnerability reporter to publicly disclose the vulnerability and their research methods _after_ the vulnerability has been fixed, subject to strongDM’s explicit written consent;
-    - We will send the vulnerability reporter a custom strongDM Vulnerability Reporter t-shirt;
+# Safe Harbor
+Any activities conducted in a manner consistent with this policy will be considered authorized conduct and we will not initiate legal action against you. If legal action is initiated by a third party against you in connection with activities conducted under this policy, we will take steps to make it known that your actions were conducted in compliance with this policy.
 
-## Defining the Scope
-### Allowed Targets
-1. The following targets are considered to be "in-scope" or allowable under the provisions of this Responsible Disclosure Policy:
+As long as you follow the rules defined in this policy, strongDM makes the following commitments:
 
-    - The strongDM Marketing website located at `https://www.strongdm.com`
-    - The strongDM Web Application located at `https://app.strongdm.com`
-    - The strongDM client applications
-        - macOS
-        - Windows
-        - Linux
-    - The strongDM gateway/relay application
+- We will not pursue civil or criminal legal action against a vulnerability reporter in response to vulnerability research and disclosure to us;
+- We will work with the vulnerability reporter to understand and reproduce the vulnerability that has disclosed to us;
+- We will keep the vulnerability reporter informed of our timeline for fixing the submitted vulnerability once we have verified it;
+- We will recognize the vulnerability reporter on our website for their contributions toward making our product more secure;
+- We may allow the vulnerability reporter to publicly disclose the vulnerability and their research methods _after_ the vulnerability has been fixed, subject to strongDM’s explicit written consent;
 
-### Prohibited Methods
-1. The following methods are prohibited and considered out-of-scope:  
+Thank you for helping keep strongDM and our customers safe!
 
-    - Posting, uploading, linking to, or storing any malicious software or programs;
-    - Physical security testing of office and/or data center access (e.g. open doors, tailgating);
-    - Social engineering of our employees or customers (e.g. phishing, vishing);
-    - Knowingly executing or attempting to execute any destructive or Denial of Service attacks;
-    - Targeting applications or systems not specifically listed in the __[Allowed Targets](#allowed-targets)__ section of this policy;
+# Response & Remediation Targets
+strongDM will make a best effort to meet the following SLAs for hackers participating in our program:
 
-## Submitting Vulnerabilities
-### What Should be Submitted
-1. Please forward as much of the following to our Security Team as you have available:
+| Type of Response | SLA in business days |
+| ------------- | ------------- |
+| First Response | 2 days |
+| Time to Triage | 2 days |
+| Time to Resolution | depends on severity and complexity |
 
-    - The asset or target that is subject to the vulnerability you are disclosing;
-    - A brief summary of the vulnerability you are disclosing;
-    - Detailed steps so that we can assess and reproduce the vulnerability on our own to verify it, or enough information to demonstrate the potential vulnerability (in the event it might be destructive or a denial of service type of vulnerability);
-    - Any scripts or environment information that would be helpful in reproducing the vulnerability;
-    - If the vulnerability results in sensitive information disclosure, please describe the type (but not content) of the sensitive information disclosed;
+Once a vulnerability has been verified, we will make a best effort to remediate within the following timelines:
 
-### What Should Not be Submitted
-1. Please do not send any of the following information to us:
-
-    - Personally Identifiable Information for persons other than yourself;
-    - Private Health Information;
-    - Credit Card Information of any type (PAN, CCV/CVN, etc.);
-
-### How to Send Us a Report
-1. strongDM's Security Team keeps a public GitHub repository with instructions and templates for creating vulnerability reports located at `https://www.github.com/strongdm/security`
-
-1. Vulnerability Reporters should refer to the GitHub repository for the most up to date methods for securely submitting reports to strongDM
-
-## What Comes Next
-1. The strongDM Security Team will respond with an acknowledgement of receipt of submitted vulnerabilities within 3 business day
-
-1. The strongDM Security Team will work with internal stakeholders, and the Vulnerability Reporter as needed, to reproduce and verify the submitted vulnerability
-
-1. The strongDM Security Team will work with internal stakeholders to develop a timeline for remediation, accounting for the severity of the vulnerability, availability of exploit code, and internal workloads. The timeline for remediation will be communicated to the Vulnerability Reporter
-
-1. After a reported issue has been remediated, strongDM will follow up with the Vulnerability Reporter to ensure they are aware of the fix, discuss public disclosure of the vulnerability, and discuss details for public recognition on strongDM's website
-
-### Remediation Timelines
-1. Consistent with strongDM's internal policies on vulnerability remediation, strongDM will strive to resolve all reported vulnerabilities within the following timelines, subject to verification and reproduction of the vulnerability, and strongDM making an independent assessment of the criticality:
-
-| Rating | Deadline |
-|:-|:-|
+| Severity Rating | Resolution Target |
+|:-:|:-:|
 | Critical | 14 days |
 | High | 30 days |
 | Medium | 60 days |
-| Low | 90 days |
+| Low | 90 days or accepted risk |
 
-# Definitions
-Within this document, the following definitions apply:
+Please note that the severity rating for a reported vulnerability may be adjusted by strongDM in line with our Vulnerability Management Program. We’ll try to keep you informed about our progress throughout the process.
 
-i. *Availability*: Ensuring timely and reliable access to and use of information
+# Program Rules
+1. Research only that which is "in-scope" or "allowed", without using any of the [Prohibited Methods][prohibited-methods] listed below
+1. Follow HackerOne's [disclosure guidelines](https://www.hackerone.com/disclosure-guidelines)
+1. Communicate with us only by the methods provided by HackerOne
+1. Please provide detailed reports with reproducible steps. If the report is not detailed enough to reproduce the issue, the issue may not be marked as triaged.
+    1. Submit one vulnerability per report, unless you need to chain vulnerabilities to provide impact
+    1. Multiple vulnerabilities caused by one underlying issue will be treated as one valid report.
+    1. When duplicates occur, we only triage the first report that was received (provided that it can be fully reproduced).
+1. Make a good faith effort to avoid privacy violations, destruction of data, and interruption or degradation of our service. Only interact with accounts you own or with explicit permission of the account holder.
+1. Ensure any data exposed is kept to a minimum, not stored, and treated as confidential at all times;
+1. Do not destroy or alter data discovered during your research
+1. Do not publicly or privately disclose any vulnerabilities [existing or remediated] discovered during your research to anyone other than strongDM and HackerOne
 
-i. *Auditability*: Ability to independently review or examine the records and activities of a system to assess the adequacy of system controls, and ensure compliance with established policies, and attribute all actions on a system to a unique account or process.
+# VDP Scope
 
-i. *Confidentiality*: Preserving authorized restrictions on information access and disclosure, including means for protecting personal privacy and proprietary information
+## In-Scope Assets
+### Domains
+Any strongDM-owned domains _not_ listed below are not in scope and _not_ covered by our legal safe harbor
+- `app.strongdm.com`
+- `api.strongdm.com`
+- `*.sdm.network`
 
-i. *Integrity*: Guarding against improper information modification or destruction, and includes ensuring information non-repudiation and authenticity
+### Software Development Kits
+strongDM provides software development kits to its customers to speed integrations. Our four SDKs are available in public GitHub repositories linked below:
+- [Go](https://github.com/strongdm/strongdm-sdk-go)
+- [Ruby](https://github.com/strongdm/strongdm-sdk-ruby)
+- [Python](https://github.com/strongdm/strongdm-sdk-python)
+- [Java](https://github.com/strongdm/strongdm-sdk-java)
 
-i. *Reporters*: Any person who, through this Policy, submits a report of a potential vulnerability to strongDM
+### Installed Applications (Executables)
+Part of the strongDM Platform includes local client and gateway server applications. These are
 
-i. *Security Team*: The employees of strongDM who are responsible for ensuring the confidentiality, integrity, availability, and auditability of all information systems that process, store, or handle strongDM data
+- Client Applications
+  - [macOS](https://www.strongdm.com/docs/user-guide/client-installation/mac-installation)
+    - x86/x64 (Intel)
+    - ARM (Apple M1)
+  - [Windows](https://www.strongdm.com/docs/user-guide/client-installation/windows-installation)
+    - x86/x64 (Intel)
+    - ARM
+  - [Linux CLI](https://www.strongdm.com/docs/user-guide/client-installation/linux-installation)
+- Gateway Applications
+  - [Linux](https://www.strongdm.com/docs/installation/install-your-gateway/linux-gateway)
+  - [Docker/Kubernetes/Fargate Container](https://www.strongdm.com/docs/installation/install-your-gateway/docker-gateway)
 
-i. *System Owners*: The person or role that is responsible for implementing and maintaining an information system
+### Out-of-Scope Assets
+- Any domain owned by strongDM not specifically listed above, including:
+  - `www.strongdm.com`
+- Any SaaS applications used by strongDM for business operations, such as Slack, Google Workspace, Zoom, etc.
 
-i. *Vulnerability*: Weakness in an information system, system security procedures, internal controls, or implementation that could be exploited or triggered by a threat source
+### Out-of-Scope vulnerabilities
+**When reporting vulnerabilities, please consider (1) attack scenario/exploitability, and (2) security impact of the bug. The following issues are considered out of scope:**
+
+* Any activity that could lead to the disruption of our service (DoS)
+* Missing email best practices (Invalid, incomplete or missing SPF/DKIM/DMARC records, etc.)
+* Tabnabbing
+* Clickjacking on pages with no sensitive actions
+* Cross-Site Request Forgery (CSRF) on unauthenticated forms or forms with no sensitive actions
+* Content spoofing and text injection issues without showing an attack vector/without being able to modify HTML/CSS
+* Open redirect unless an additional security impact can be demonstrated
+* Issues that require unlikely user interaction
+* Attacks requiring MITM or physical access to a user's device
+* Vulnerabilities only affecting users of outdated or unpatched browsers [Less than 2 stable versions behind the latest released stable version]
+* Previously known vulnerable libraries without a working Proof of Concept
+* Comma Separated Values (CSV) injection without demonstrating a vulnerability
+
+## Prohibited Methods
+The following methods are prohibited and considered out-of-scope:  
+
+1. Posting, uploading, linking to, or storing any malicious software or programs
+1. Physical security testing of office and/or data center access (e.g. open doors, tailgating)
+1. Social engineering of our employees or customers (e.g. phishing, vishing, smishing)
+1. Knowingly executing or attempting to execute any destructive or Denial of Service attacks
+1. Targeting out of scope applications
+1. Targeting our customers users, administrators, or infrastructure in any way
+
+## What Should Not be Submitted
+Please do not send any of the following information to us:
+
+- Personally Identifiable Information for persons other than yourself;
+- Private Health Information;
+- Credit Card Information of any type (PAN, CCV/CVN, etc.);
+
+[disclosure-policy]: #user-content-disclosure-policy
+[safe-harbor]: #user-content-safe-harbor
+[response--remediation-targets]: #user-content-response--remediation-targets
+[program-rules]: #user-content-program-rules
+[prohibited-methods]: #user-content-prohibited-methods
+[what-should-not-be-submitted]: #user-content-what-should-not-be-submitted
+[out-of-scope-vulnerabilities]: #user-content-out-of-scope-vulnerabilities
