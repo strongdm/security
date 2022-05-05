@@ -113,6 +113,7 @@ Part of the strongDM Platform includes local client and gateway server applicati
 * Vulnerabilities only affecting users of outdated or unpatched browsers [Less than 2 stable versions behind the latest released stable version]
 * Previously known vulnerable libraries without a working Proof of Concept
 * Comma Separated Values (CSV) injection without demonstrating a vulnerability
+* Misconfigurations on third-party applications/widgets on any domain, unless there is immediate and verifiable confidential data disclosure (e.g. you can actually see the confidential information, not just theoretically gain access)
 
 ## Prohibited Methods
 The following methods are prohibited and considered out-of-scope:  
